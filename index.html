@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Waste Management System</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/blynk-library/blynk.min.js"></script>
+  </head>
+  <body>
+    <div class="firstPage">
+      <div class="heading">
+        <h1 class="head">Smart Waste</h1>
+        <h1 class="head">Management</h1>
+        <h1 class="head">System</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div id="map">
+        <button id="focus-delhi" class="focus-button">Focus on Delhi</button>
+      </div>
+      <div>
+        <button id="start-collection">Start Collection</button>
+        <div id="bin-list" class="hidden"></div>
+      </div>
+    </div>
+
+    <div>
+      <button id="show-fill-level">Show Level</button>
+      <div id="bar-container">
+        <div id="fill-bar"></div>
+    </div>
+    <div id="fill-level" class="hidden">Current Fill Level: <span id="fill-level-value">0</div>
+      <!-- Add this button -->
+      <div id="fill-level" class="hidden"></div>
+      <!-- Add this div to display the fill level -->
+    </div>
+
+    <div class="content">
+      <section id="about-us">
+        <h1>About Us - Smart Waste Management System</h1>
+        <p>
+          Welcome to the Smart Waste Management System, where innovation meets
+          environmental sustainability. Our mission is to revolutionize waste
+          management through intelligent solutions that enhance efficiency and
+          reduce environmental impact.
+        </p>
+        <br />
+        <br />
+        <p>
+          Established in 2024, our company has rapidly grown to become a leader
+          in the waste management industry. Our cutting-edge technology
+          integrates advanced data analytics and real-time monitoring to provide
+          an efficient and eco-friendly waste management solution.
+        </p>
+        <br />
+        <br />
+        <p>
+          Our team comprises dedicated professionals passionate about creating a
+          cleaner and greener world. From software developers to data analysts,
+          each member brings unique expertise to drive our mission forward.
+        </p>
+        <br />
+        <br />
+        <p>
+          Join us on our journey to transform waste management and make a
+          positive impact on our environment. Together, we can build a smarter,
+          cleaner future.
+        </p>
+      </section>
+      <section id="our-team">
+        <h1>Our Members</h1>
+        <div class="teamContainer">
+          <div class="team-item">
+            <img src="./Assets/karan.png" alt="Karan Bhatia" />
+            <h5 class="member-name">Karan Bhatia</h5>
+            <span class="role">Web Developer</span>
+          </div>
+          <div class="team-item">
+            <img src="./Assets/shubham.png" alt="Shubham Dev" />
+            <h5 class="member-name">Shubham Dev</h5>
+            <span class="role">Project Lead</span>
+          </div>
+          <div class="team-item">
+            <img src="./Assets/deepak.jpg" alt="Deepak Kumar" />
+            <h5 class="member-name">Deepak Kumar</h5>
+            <span class="role">Project Supervisor</span>
+          </div>
+          <div class="team-item">
+            <img src="./Assets/keshav.jpg" alt="Keshav Yadav" />
+            <h5 class="member-name">Keshav Yadav</h5>
+            <span class="role">Design Developer</span>
+          </div>
+          <div class="team-item">
+            <img src="./Assets/alok.jpg" alt="Alok" />
+            <h5 class="member-name">Alok</h5>
+            <span class="role">Research</span>
+          </div>
+
+        </>
+      </section>
+    </div>
+    <footer>
+      <p>&copy; 2024 Smart Waste Management System</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

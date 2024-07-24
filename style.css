@@ -1,0 +1,304 @@
+/* Basic Reset and Background */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("https://source.unsplash.com/1600x900/?city,delhi") no-repeat
+    center center fixed;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background-color: beige;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 4rem;
+}
+
+/* Map Container */
+#map {
+  height: 600px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+/* Focus on Delhi Button */
+.focus-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s;
+}
+
+.focus-button:hover {
+  background-color: #388e3c;
+}
+
+/* Start Collection Button */
+#start-collection {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #f44336;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+  margin-left: 10rem;
+  transition: background-color 0.3s;
+}
+
+#start-collection:hover {
+  background-color: #d32f2f;
+}
+
+/* Bin List Container */
+#bin-list {
+  margin-left: 10rem;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  max-width: 300px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  overflow-y: auto; /* Add scrollbar for overflow */
+  height: 450px; /* Match the map height */
+}
+
+.hidden {
+  display: none;
+}
+
+.bin-item {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.bin-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Content Section */
+.content {
+  width: 100%;
+  margin-top: 7rem;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Adjusted Paragraph Width and Centering */
+.content section p,
+#about-us p,
+#our-team .team-item .role {
+  margin: 0 auto; /* Centers the paragraphs horizontally */
+  max-width: 600px; /* Adjust maximum width for paragraphs */
+  text-align: justify; /* Justify the text */
+}
+
+#show-fill-level {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+#show-fill-level:hover {
+  background-color: #388e3c;
+}
+
+#fill-level {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #d0720d;
+}
+
+.hidden {
+  display: none;
+}
+
+/* About Us Section */
+#about-us {
+  margin-bottom: 2rem;
+}
+
+#about-us h1,
+#our-team h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#about-us p,
+#our-team .team-item .role {
+  color: #b0bec5;
+  font-size: 1.5rem;
+  max-width: 600px; /* Adjust maximum width for paragraphs */
+}
+
+/* Team Section */
+.teamContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.team-item {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  max-width: 200px;
+}
+
+.team-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.member-name {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.role {
+  font-size: 1rem;
+  color: #b0bec5;
+}
+
+/* Footer Styles */
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+/* Additional Styles for .firstPage */
+.firstPage {
+  display: flex;
+  justify-content: center; /* Centers the .heading horizontally */
+  align-items: center; /* Centers the .heading vertically */
+  width: 100%;
+  height: 100vh;
+  background-image: url("Assets/pexels-hikaique-57654.jpg"); /* Correct relative path */
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  position: relative;
+}
+
+.heading {
+  position: relative;
+  text-align: center; /* Centers the text within the .heading div */
+}
+
+.firstPage h1 {
+  margin: 0; /* Removes the default margin */
+  padding: 5px 0; /* Adds some padding for spacing */
+  opacity: 0; /* Initial state for animation */
+  animation: fadeIn 2s forwards; /* Apply fade-in animation */
+}
+
+.firstPage h1:nth-child(1) {
+  animation-delay: 0.5s; /* Delay for the first heading */
+}
+
+.firstPage h1:nth-child(2) {
+  animation-delay: 1s; /* Delay for the second heading */
+}
+
+firstPage h1:nth-child(3) {
+  animation-delay: 1.5s; /* Delay for the third heading */
+}
+
+.head {
+  font-size: 80px; /* Adjust the font size as needed */
+  color: white; /* Optional: Set the text color for better visibility */
+  font-family: "Playwrite AU TAS";
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.right-side {
+  width: 25%; /* Reduced width for right side */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Vertical Bar Container */
+#bar-container {
+  width: 50px;
+  height: 150px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  margin: 1rem 0;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#fill-bar {
+  width: 100%;
+  height: 0;
+  background-color: #4caf50;
+  position: relative;
+  bottom: 0;
+  border-radius: 8px;
+  transition: height 0.5s;
+}
