@@ -108,7 +108,7 @@ function fetchAndUpdateFillLevel() {
     .then((response) => response.text())
     .then((data) => {
       const fillLevel = parseInt(data, 10); // Convert response to integer
-      const maxLevel = 12; // Maximum level is 12 cm
+      const maxLevel = 24; // Maximum level is 24 cm
       const fillPercentage = ((maxLevel - fillLevel) / maxLevel) * 100; // Calculate fill percentage
       const fillLevelDiv = document.getElementById("fill-level");
       const fillLevelValue = document.getElementById("fill-level-value");
